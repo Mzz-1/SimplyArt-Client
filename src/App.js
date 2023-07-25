@@ -1,7 +1,5 @@
-import { useUser } from "./service/useUser";
-
-import { BrowserRouter, useLocation, Routes, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useLocation, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import { Navbar } from "./components/Navbar";

@@ -1,5 +1,4 @@
 import { BiArrowBack } from "react-icons/bi";
-import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
