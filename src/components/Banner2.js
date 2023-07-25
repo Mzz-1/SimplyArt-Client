@@ -3,7 +3,7 @@ export const Banner2 = () => {
     return (
         <div className="font-playfair text-[#fefefe] h-[55vh] lg:h-[90vh] w-[100%] flex justify-center items-center mb-9 bg-cover bg-center bg-[url('https://res.cloudinary.com/djuzpmqlp/image/upload/v1688291407/assets/dannie-jing-3GZlhROZIQg-unsplash_zeyvsp.jpg')]">
  
-            <div className=" absolute lg:bottom-[7%] bottom-[15%]  text-center w-[80%]  lg:w-[60%] m-auto bg-opacity-50" data-aos="fade-up">
+            <div className=" absolute lg:bottom-[7%] bottom-[20%]  text-center w-[80%]  lg:w-[60%] m-auto bg-opacity-50" data-aos="fade-up">
                 <p className=" text-[40px] lg:text-[55px] border-b-2">
                     Art that inspires
                 </p>
