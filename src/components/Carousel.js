@@ -12,8 +12,8 @@ export const Carousel = ({ products, artists, events }) => {
     const flickityOptions = {
         cellAlign: "center",
         wrapAround: true,
-        draggable: false,
-        prevNextButtons: true,
+        draggable: window.innerWidth < 768 ? true : false,
+        prevNextButtons: window.innerWidth < 768 ? false : true,
         pageDots: true,
         imagesLoaded: true,
     };
