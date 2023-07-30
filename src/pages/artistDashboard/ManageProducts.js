@@ -16,7 +16,7 @@ export const ManageProducts = () => {
     const user = useUser();
     const navigate = useNavigate();
 
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
     const getBio = async () => {
         const productsData = await axios.get(
@@ -39,7 +39,7 @@ export const ManageProducts = () => {
     };
 
     const deleteProducts = async (id) => {
-        dispatch(deleteProduct({id}))
+        dispatch(deleteProduct({ id }));
         getProducts();
         SuccessToast("Product has been deleted.");
     };
@@ -50,12 +50,12 @@ export const ManageProducts = () => {
 
     useEffect(() => {
         getBio();
-        document.title = "Manage Products | Artist Dashboard"; 
+        document.title = "Manage Products | Artist Dashboard";
     }, []);
 
     useEffect(() => {
         getProducts();
-    }, [deleteProducts]);
+    }, []);
 
     return (
         <div className="flex flex-col gap-[40px] h-[100%] ">
