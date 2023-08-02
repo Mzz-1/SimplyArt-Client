@@ -31,7 +31,7 @@ export const ProductDetails = () => {
     useEffect(() => {
         const pageTitle = productData?.product?.name + " | SimplyArt";
         document.title = pageTitle;
-    }, [id]);
+    }, [id, productData?.product?.name]);
 
     useEffect(() => {
         dispatch(getProduct({ id }));
@@ -45,7 +45,7 @@ export const ProductDetails = () => {
             if (addToCartStatus === "success") {
                 navigate("/cart");
                 SuccessToast("Product added to cart.");
-            }else{
+            } else {
                 navigate("/login");
                 InfoToast("Please log in to use the cart.");
             }
