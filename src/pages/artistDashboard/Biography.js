@@ -66,7 +66,7 @@ const Biography = () => {
 
         try {
             const response = await axios.get(
-                `http://localhost:5000/api/artist/${user.id}`
+                `https://wicked-red-skunk.cyclic.app/api/artist/${user.id}`
             );
             console.log(response.data);
             setDoesExist(true);
@@ -76,7 +76,7 @@ const Biography = () => {
         if (!exist) {
             try {
                 const response = await axios.patch(
-                    `http://localhost:5000/api/biography/${user.id}`,
+                    `https://wicked-red-skunk.cyclic.app/api/biography/${user.id}`,
                     formData,
                     {
                         headers: {
@@ -92,7 +92,7 @@ const Biography = () => {
         } else {
             try {
                 const response = await axios.post(
-                    "http://localhost:5000/api/biography",
+                    "https://wicked-red-skunk.cyclic.app/api/biography",
                     formData,
                     {
                         headers: {

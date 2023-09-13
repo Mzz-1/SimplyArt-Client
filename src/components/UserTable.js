@@ -10,7 +10,7 @@ export const UserTable = ({ userType }) => {
 
     const getUsers = async () => {
         const userData = await axios.get(
-            `http://localhost:5000/api/users?role=${userType}`
+            `https://wicked-red-skunk.cyclic.app/api/users?role=${userType}`
         );
 
         const data = await userData.data.users;
@@ -20,7 +20,7 @@ export const UserTable = ({ userType }) => {
 
     const deleteUser = async (id) => {
         const deleteData = await axios.delete(
-            `http://localhost:5000/api/users/${id}`
+            `https://wicked-red-skunk.cyclic.app/api/users/${id}`
         );
         SuccessToast("User has been deleted.")
         getUsers();
